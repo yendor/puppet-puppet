@@ -19,7 +19,7 @@ class puppet {
   
   augeas { "puppet_agents_report":
     context => "/files/etc/puppet/puppet.conf",
-    changes => "set puppetd/report true",
+    changes => "set agent/report true",
   }
 
 }
