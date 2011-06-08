@@ -17,9 +17,9 @@ class puppet {
     minute  => ip_to_cron(2)
   }
   
-  augeas { "puppet_agents_report":
-    context => "/files/etc/puppet/puppet.conf",
-    changes => "set agent/report true",
-  }
+  # augeas { "puppet_agents_report":
+  #   context => "/files/etc/puppet/puppet.conf",
+  #   changes => "set agent/report true",
+  # }
 
 }
